@@ -15,7 +15,6 @@ This repository contains the code, documentation, and resources for the Hand Exe
 - [Project Timeline](#project-timeline)
 - [Future Scope](#future-scope)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 The Hand Exercise Detection and Feedback System is designed for physiotherapy and rehabilitation purposes. It helps users perform prescribed hand exercises with proper posture and provides real-time feedback to ensure the exercises are executed correctly.
