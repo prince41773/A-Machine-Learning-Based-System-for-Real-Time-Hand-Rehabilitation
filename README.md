@@ -47,48 +47,50 @@ Clone the repository:
 git clone https://github.com/your-username/hand-exercise-detection.git
 cd hand-exercise-detection
 ```
-# Install the required dependencies:
+## Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-# Run the Streamlit application:
+## Run the Streamlit application:
 ```bash
 streamlit run app.py
 ```
 
+
 ## Dataset Description
 The dataset contains eight hand exercises captured using a webcam positioned 150 cm from the floor. Frames were extracted at 30 FPS to ensure detailed coverage.
-# Exercises Captured:
-Ball_Grip_Wrist_Down
-Ball_Grip_Wrist_UP
-Pinch
-Thumb_Extend
-Opposition
-Extend Out
-Finger Bend
-Side Squeezer
 
-# Feature Extraction:
-Distances and angles between hand landmarks are computed using MediaPipe.
-Processed data is stored in a CSV file for training and evaluation.
+**Exercises Captured:**
+- Ball_Grip_Wrist_Down
+- Ball_Grip_Wrist_UP
+- Pinch
+- Thumb_Extend
+- Opposition
+- Extend Out
+- Finger Bend
+- Side Squeezer
+
+**Feature Extraction:**
+- Distances and angles between hand landmarks are computed using MediaPipe.
+- Processed data is stored in a CSV file for training and evaluation.
 
 ## System Architecture
-# Data Collection:
-Webcam feed captures hand exercise videos.
-Frames are preprocessed to extract hand landmarks using MediaPipe.
+**Data Collection:**
+- Webcam feed captures hand exercise videos.
+- Frames are preprocessed to extract hand landmarks using MediaPipe.
 
-# Feature Engineering:
-Distances and angles are computed for hand landmarks.
+**Feature Engineering:**
+- Distances and angles are computed for hand landmarks.
 
-# Model Training:
-A Random Forest Classifier is trained on labeled data to classify exercises.
+**Model Training:**
+- A Random Forest Classifier is trained on labeled data to classify exercises.
 
-# Feedback Mechanism:
-Real-time predictions annotate the live video feed with exercise names, confidence scores, and corrective feedback.
-Confidence-based adjustment ensures accurate user feedback.
+**Feedback Mechanism:**
+- Real-time predictions annotate the live video feed with exercise names, confidence scores, and corrective feedback.
+- Confidence-based adjustment ensures accurate user feedback.
 
-# Web Application:
-Streamlit displays live annotated webcam feed and interactive controls.
+**Web Application:**
+- Streamlit displays live annotated webcam feed and interactive controls.
 
 ## Evaluation Measures
 Performance metrics were computed on the validation set:
@@ -110,6 +112,7 @@ To launch the app:
 ```bash
 streamlit run app.py
 ```
+
 
 ## Usage
 **Data Collection:**
